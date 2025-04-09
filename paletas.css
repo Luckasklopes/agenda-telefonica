@@ -1,0 +1,74 @@
+/* CAFÉ COM LEITE */
+:root {
+  --cor-fundo: #fdfce8;
+  --cor-container: #e2ceb1;
+  --cor-borda: #c7a07a;
+
+  --cor-clara: #e2ceb1;
+  --cor-escura: #734128;
+  --cor-mais-escura: #391e10;
+
+  --cor-texto-primario: #391e10;
+  --cor-texto-secundario: #734128;
+
+  --cor-texto-botao: #e2ceb1;
+
+  --cor-sucesso: #4caf50;
+  --cor-sucesso-texto: #ffffff;
+
+  --cor-erro: #f44336;
+  --cor-erro-texto: #ffffff;
+
+  --cor-edicao: #2196f3;
+  --cor-edicao-texto: #ffffff;
+}
+
+/* COROLLA XEI 2008 AUTOMATICO PRATA */
+:root {
+  --cor-fundo: #f3f4f6; /* cinza muito claro - fundo geral */
+  --cor-container: #ffffff; /* branco - cartões, modais */
+  --cor-borda: #d1d5db; /* cinza claro - bordas sutis */
+
+  --cor-clara: #e5e7eb; /* cinza claro - cartões */
+  --cor-escura: #374151; /* cinza grafite - botões */
+  --cor-mais-escura: #111827; /* preto acinzentado - textos fortes */
+
+  --cor-texto-primario: #111827; /* preto acinzentado - títulos */
+  --cor-texto-secundario: #4b5563; /* cinza médio - textos complementares */
+
+  --cor-texto-botao: #ffffff; /* branco - texto dos botões */
+
+  --cor-sucesso: #10b981; /* verde esmeralda - confirmações */
+  --cor-sucesso-texto: #ffffff;
+
+  --cor-erro: #ef4444; /* vermelho suave - erros */
+  --cor-erro-texto: #ffffff;
+
+  --cor-edicao: #3b82f6; /* azul médio - edições */
+  --cor-edicao-texto: #ffffff;
+}
+
+/* COROLLA XEI 2008 AUTOMATICO PRETO */
+:root {
+  --cor-fundo: #1f2937; /* cinza escuro azulado - fundo principal */
+  --cor-container: #111827; /* quase preto - cartões e containers */
+  --cor-borda: #374151; /* cinza escuro médio - bordas sutis */
+
+  --cor-clara: #374151; /* cinza intermediário - destaque leve */
+  --cor-escura: #4b5563; /* cinza um pouco mais claro - botões */
+  --cor-mais-escura: #d1d5db; /* cinza claro - textos fortes */
+
+  --cor-texto-primario: #f9fafb; /* branco levemente quebrado */
+  --cor-texto-secundario: #9ca3af; /* cinza claro - textos menos importantes */
+
+  --cor-texto-botao: #f9fafb; /* branco suave - texto nos botões */
+
+  --cor-sucesso: #10b981; /* verde esmeralda - confirmações */
+  --cor-sucesso-texto: #f9fafb;
+
+  --cor-erro: #ef4444; /* vermelho suave - erros */
+  --cor-erro-texto: #f9fafb;
+
+  --cor-edicao: #3b82f6; /* azul médio - edições */
+  --cor-edicao-texto: #f9fafb;
+}

@@ -1,0 +1,264 @@
+/* COROLLA XEI 2008 AUTOMATICO PRATA */
+:root {
+  --cor-fundo: #f3f4f6; /* cinza muito claro - fundo geral */
+  --cor-container: #ffffff; /* branco - cartões, modais */
+  --cor-borda: #d1d5db; /* cinza claro - bordas sutis */
+
+  --cor-clara: #e5e7eb; /* cinza claro - cartões */
+  --cor-escura: #374151; /* cinza grafite - botões */
+  --cor-mais-escura: #111827; /* preto acinzentado - textos fortes */
+
+  --cor-texto-primario: #111827; /* preto acinzentado - títulos */
+  --cor-texto-secundario: #4b5563; /* cinza médio - textos complementares */
+
+  --cor-texto-botao: #ffffff; /* branco - texto dos botões */
+
+  --cor-toggle: #eab308; /* amarelo ouro - toggle */
+  --cor-toggle-texto: #ffffff;
+
+  --cor-sucesso: #10b981; /* verde esmeralda - confirmações */
+  --cor-sucesso-texto: #ffffff;
+
+  --cor-erro: #ef4444; /* vermelho suave - erros */
+  --cor-erro-texto: #ffffff;
+
+  --cor-edicao: #3b82f6; /* azul médio - edições */
+  --cor-edicao-texto: #ffffff;
+}
+
+/* COROLLA XEI 2008 AUTOMATICO PRETO */
+[data-theme="escuro"] {
+  --cor-fundo: #1f2937; /* cinza escuro azulado - fundo principal */
+  --cor-container: #111827; /* quase preto - cartões e containers */
+  --cor-borda: #374151; /* cinza escuro médio - bordas sutis */
+
+  --cor-clara: #374151; /* cinza intermediário - destaque leve */
+  --cor-escura: #4b5563; /* cinza um pouco mais claro - botões */
+  --cor-mais-escura: #d1d5db; /* cinza claro - textos fortes */
+
+  --cor-texto-primario: #f9fafb; /* branco levemente quebrado */
+  --cor-texto-secundario: #9ca3af; /* cinza claro - textos menos importantes */
+
+  --cor-texto-botao: #f9fafb; /* branco suave - texto nos botões */
+
+  --cor-toggle: #eab308; /* amarelo ouro - toggle */
+  --cor-toggle-texto: #ffffff;
+
+  --cor-sucesso: #10b981; /* verde esmeralda - confirmações */
+  --cor-sucesso-texto: #f9fafb;
+
+  --cor-erro: #ef4444; /* vermelho suave - erros */
+  --cor-erro-texto: #f9fafb;
+
+  --cor-edicao: #3b82f6; /* azul médio - edições */
+  --cor-edicao-texto: #f9fafb;
+}
+
+body {
+  background-color: var(--cor-fundo);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.titulo {
+  font-family: sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--cor-texto-primario);
+}
+
+.lista {
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.lista-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cor-clara);
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 2px solid var(--cor-escura);
+  margin-bottom: 4px;
+}
+
+.lista-dados {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.contato-nome {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--cor-texto-primario);
+}
+
+.contato-numero {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--cor-texto-secundario);
+}
+
+.lista-botoes {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  width: 40%;
+}
+
+.botao {
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--cor-texto-botao);
+
+  border-radius: 88px;
+  padding: 10px 20px;
+  background-color: var(--cor-escura);
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.botao-toggle:hover {
+  transform: scale(1.05);
+  background-color: var(--cor-toggle);
+  color: var(--cor-toggle-texto);
+}
+
+.botao-confirma:hover {
+  transform: scale(1.05);
+  background-color: var(--cor-sucesso);
+  color: var(--cor-sucesso-texto);
+}
+
+.botao-cancela:hover {
+  transform: scale(1.05);
+  background-color: var(--cor-erro);
+  color: var(--cor-erro-texto);
+}
+
+.botao-edita:hover {
+  transform: scale(1.05);
+  background-color: var(--cor-edicao);
+  color: var(--cor-edicao-texto);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Café translúcido */
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal-conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--cor-clara);
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 2px solid var(--cor-escura);
+  margin: 10% auto;
+  width: 400px;
+  gap: 8px;
+  position: relative;
+}
+
+.modal-conteudo form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 70%;
+}
+
+.modal-titulo {
+  font-family: sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  text-align: center;
+  color: var(--cor-texto-primario);
+  margin: 0;
+}
+
+.modal-conteudo input {
+  display: block;
+  margin: 0 auto;
+  background-color: var(--cor-fundo);
+
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--cor-mais-escura);
+
+  border-radius: 8px;
+  border: 2px solid var(--cor-escura);
+  width: 80%;
+  margin-bottom: 4px;
+}
+
+.modal-botoes {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.sem-contatos {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.sem-contatos img {
+  width: 250px;
+  opacity: 0.9;
+  animation: floatRotate 3s ease-in-out infinite;
+}
+
+@keyframes floatRotate {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-8px) rotate(-2deg);
+  }
+  50% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-8px) rotate(2deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
