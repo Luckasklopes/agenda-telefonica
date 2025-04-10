@@ -60,8 +60,8 @@ if (isset($_GET["edit"])) {
 <head>
     <meta charset="UTF-8">
     <title>Agenda Telefônica</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="sem-contatos.png">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" type="image/png" href="./assets/sem-contatos.png">
 </head>
 
 <body>
@@ -149,7 +149,7 @@ if (isset($_GET["edit"])) {
         <?php if ($result->num_rows === 0): ?>
             <div class="sem-contatos">
                 <p class="titulo">Parece que você ainda não tem nenhum contato</p>
-                <img src="sem-contatos2.png" alt="Nenhum contato encontrado" />
+                <img src="./assets/sem-contatos2.png" alt="Nenhum contato encontrado" />
             </div>
         <?php else: ?>
 
@@ -173,7 +173,7 @@ if (isset($_GET["edit"])) {
 
 
 <!-- IMPORT JAVASCRIPT -->
-<script src="script.js"></script>
+<script src="./scripts/script.js"></script>
 </body>
 
 </html>
