@@ -63,7 +63,7 @@ if (isset($_GET["edit"])) {
     <meta charset="UTF-8">
     <title>Agenda Telefônica</title>
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="icon" type="image/png" href="./assets/sem-contatos.png">
+    <link rel="icon" type="image/png" href="./assets/icone.png">
 </head>
 
 <body>
