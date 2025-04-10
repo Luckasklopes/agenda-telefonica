@@ -61,6 +61,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   width: 60%;
   margin: 0 auto;
@@ -71,6 +72,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  min-width: 550px;
 }
 
 .titulo {
@@ -78,6 +80,7 @@ body {
   font-size: 32px;
   font-weight: 800;
   color: var(--cor-texto-primario);
+  text-align: center;
 }
 
 .lista {
@@ -96,6 +99,7 @@ body {
   border-radius: 8px;
   border: 2px solid var(--cor-escura);
   margin-bottom: 4px;
+  min-width: 550px;
 }
 
 .lista-dados {
