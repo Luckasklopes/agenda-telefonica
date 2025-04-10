@@ -41,8 +41,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["id_editar"])) {
     exit();
 }
 
+// Select para a exibição
 $result = $conn->query("SELECT * FROM contato ORDER BY nome ASC");
 
+// Seletor para edição
 $contato_editar = null;
 if (isset($_GET["edit"])) {
     $id = $_GET["edit"];
@@ -67,7 +69,7 @@ if (isset($_GET["edit"])) {
 <body>
     <div class="container">
         <div class="top-container">
-            <!-- TITULO -->
+            <!-- BOTÃO TEMA -->
             <button class="botao botao-toggle" id="toggle-tema">Alternar Tema</button>
 
             <!-- TITULO -->
@@ -153,7 +155,7 @@ if (isset($_GET["edit"])) {
             </div>
         <?php else: ?>
 
-
+            <!-- LISTA -->
             <ul class="lista">
                 <?php while ($row = $result->fetch_assoc()): ?>
                     <li class="lista-item">
